@@ -1,0 +1,30 @@
+#include <stdio.h>  // แก้จาก <studio.h> เป็น <stdio.h>
+#include <conio.h>  // แก้จาก <coni.h> เป็น <conio.h>
+
+int main() {
+    float a, b = 3;
+    bool _1 = 0;  // ใช้ชนิดข้อมูล bool ต้องมี #include <stdbool.h> แต่ในที่นี้ยังไม่มี
+    printf("%d ", _1);  // พิมพ์ค่า _1 ซึ่งเป็นค่า boolean
+
+    int i = 0;
+
+    // แก้โครงสร้าง if-else และ while-loop ให้ถูกต้อง
+    if (_1 != 0) {
+        printf("ok ");
+    } else {
+        while (i <= 5) {
+            printf(" not-okey-%d ", ++i);
+        }
+    }
+
+    // แก้โครงสร้าง for-loop และเงื่อนไข if-else ให้ถูกต้อง
+    for (i = 3; i < 10; i += 1) {
+        if (i % 2 == 1) {  // ตรวจสอบว่าค่า i เป็นเลขคี่
+            printf("see see ");
+        } else {
+            printf("haha ");
+        }
+    }
+
+    return 0;
+}
